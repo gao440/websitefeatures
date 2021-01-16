@@ -1,0 +1,17 @@
+.ul-oneline
+{
+  align-content: center;
+  
+}
+
+
+.div
+{
+  padding-left:5pc;
+  padding-right: 5pc;
+}
+
+.c-tags-list__item {
+  display: inline-block;
+  margin: 0 10px;
+}

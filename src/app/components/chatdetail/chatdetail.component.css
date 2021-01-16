@@ -1,0 +1,18 @@
+.div {
+  padding-left: 5pc;
+  padding-right: 5pc;
+}
+
+.list {
+  color: blue;
+  margin: 10 10px;
+}
+
+.form-group {
+  padding-top: 5px;
+}
+
+.badge {
+    padding-left: 10px;
+    padding-right: 10px;
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "charlesgaoweb": {
+      "hosting": {
+        "gaoproj": [
+          "charlesgaoweb"
+        ]
+      }
+    }
+  }
+}

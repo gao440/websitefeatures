@@ -1,0 +1,39 @@
+<div *ngIf="currentChat" class="edit-form">
+  <form>
+    <div class="form-group">
+      <label for="show">show </label>
+      <input type="text" class="form-control" id="show" [(ngModel)]="currentChat.show" name="show" />
+    </div>
+    <div class="form-group">
+      <label for="url">URL </label>
+      <input type="text" class="form-control" id="url" [(ngModel)]="currentChat.url" name="url" />
+    </div>
+
+    <div class="form-group">
+      <label for="episode"> Episode </label>
+      <input type="text" class="form-control" id="url" [(ngModel)]="currentChat.episode" name="episode" />
+    </div>
+
+  </form>
+  <div class="form-group">
+    <table>
+      <td>
+        <button (click)="deleteChat()">
+          Delete
+        </button>
+      </td>
+      <td>
+        <button type="submit"  (click)="updateChat()">
+          Update
+        </button>
+      </td>
+    </table>  
+
+  </div>
+  <p>{{ message }}</p>
+</div>
+
+<div *ngIf="!currentChat">
+  <br />
+  <p>Cannot access this chat...</p>
+</div>

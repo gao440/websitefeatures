@@ -1,0 +1,29 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <br />
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Chat List </mat-card-title>
+    </mat-card-header>
+  <div class="list row">
+    <div >
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let chat of chats; let i = index" [class.active]="i == currentIndex"
+          (click)= "setActiveChat(chat, i)">
+          TV show: {{ chat.show }} Episode: {{ chat.episode}} from {{ chat.email}}
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div class="col-md-6">
+      <div *ngIf="currentChat">
+        <app-chatdetail (refreshList)="refreshList()" [chat]="currentChat"></app-chatdetail>
+      </div>
+
+      <div *ngIf="!currentChat">
+        <br />
+        <p>Please click on a Chat...</p>
+      </div>
+    </div>
+  </div>
+  </mat-card>
+</div>
